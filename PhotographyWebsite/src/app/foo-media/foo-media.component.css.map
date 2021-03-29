@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEE,YAFU,CAEV,GAAG,CAAC;EACF,KAAK,EAAE,MAAM;CACd;;AAGH,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,WAAW;EACpB,eAAe,EAAE,MAAM;EACvB,GAAG,EAAE,MAAM;CAEZ",
+    "sources": [
+        "foo-media.component.scss"
+    ],
+    "names": [],
+    "file": "foo-media.component.css"
+}

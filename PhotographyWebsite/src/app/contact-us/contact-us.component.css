@@ -8,3 +8,7 @@
 .alignCenter {
   margin: 0 auto;
 }
+
+.cursorPointer {
+  cursor: pointer;
+}
