@@ -10,30 +10,30 @@
     </div>
     
     <div class="container col-12 col-lg-8">
-        <form class="col-lg-10 h-100 rounded-0 alignCenter p-3 shadow">
+        <form class="col-lg-10 h-100 rounded-0 alignCenter p-3 shadow" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
           <!-- full name input fields -->
           <div class="col-md-6 w-100 pt-3">
             <label for="inputEmail4" class="form-label fw-light text-uppercase">Name*</label>
             <div class="d-flex flex-column flex-md-row">
-              <input type="input" class="form-control w-md-50 mb-1 mb-md-0 me-md-1 rounded-0" placeholder="Insert your first name">
-              <input type="input" class="form-control w-md-50 mt-1 mt-md-0 rounded-0" placeholder="Insert your last name">
+              <input type="input" formControlName="fName" class="form-control w-md-50 mb-1 mb-md-0 me-md-1 rounded-0" placeholder="Insert your first name">
+              <input type="input" formControlName="lName" class="form-control w-md-50 mt-1 mt-md-0 rounded-0" placeholder="Insert your last name">
             </div>
           </div>
 
           <!-- email input field -->
           <div class="col-md-6 w-100 pt-3">
             <label for="email" class="form-label fw-light text-uppercase">Email*</label>
-            <input type="input" class="form-control rounded-0" placeholder="Insert your email">
+            <input type="input" formControlName="email" class="form-control rounded-0" placeholder="Insert your email">
           </div>               
 
           <!-- text message input field -->
           <div class="col-md-6 w-100 pt-3">
             <label for="exampleFormControlTextarea1" class="fw-light text-uppercase">Leave us a message</label>
-            <textarea class="form-control rounded-0 " id="exampleFormControlTextarea1" rows="3" placeholder="..."></textarea>
+            <textarea class="form-control rounded-0 " formControlName="msg" rows="3" placeholder="..."></textarea>
           </div>
           <div class="col-12 pt-3">
-            <button type="submit" class="btn btn-outline-secondary rounded-0">Submit</button>
+            <input type="submit" class="btn btn-outline-secondary rounded-0" value="Submit">
           </div>
         </form>
     </div>
