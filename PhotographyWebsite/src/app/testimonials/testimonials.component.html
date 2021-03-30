@@ -6,10 +6,10 @@
 
     <!-- ### Building up the Wedding cards ### -->
 
-    <div class="row photos">
+    <div class="row">
       <div
         *ngFor="let wedding of weddings; index as weddingId"
-        class="card imgBox col-{{ wedding.columns }} p-1"
+        class="card imgBox col-{{ wedding.columns }} p-2"
       >
         <img src="{{ wedding.image }}" />
         <div class="card-body">{{ wedding.review }}</div>
@@ -22,155 +22,30 @@
 
     <!-- ### Building up the Wedding cards ### -->
 
-    <!-- <div class="row photos">
+    <div class="row">
       <div
-        *ngFor="let wedding of weddings; index as weddingId"
-        class="card imgBox col-{{ wedding.columns }} p-1"
+        *ngFor="let portrait of portraits; index as portraitId"
+        class="card imgBox col-{{ portrait.columns }} p-2"
       >
-        <img src="{{ wedding.image }}" />
-        <div class="card-body">{{ wedding.review }}</div>
+        <img src="{{ portrait.image }}" />
+        <div class="card-body">{{ portrait.review }}</div>
       </div>
-    </div> -->
+    </div>
 
-    <!--#############################-->
+    <!-- ### Travel Testimonials ### -->
+
+    <div class="row mt-4 mb-2 ms-0 fs-1">Travels</div>
+
+    <!-- ### Building up the Travel cards ### -->
+
+    <div class="row">
+      <div
+        *ngFor="let travel of travels; index as travelId"
+        class="card imgBox col-{{ travel.columns }} p-2"
+      >
+        <img src="{{ travel.image }}" />
+        <div class="card-body">{{ travel.review }}</div>
+      </div>
+    </div>
   </div>
 </div>
-
-<!-- ### Portraits Line 1 ### -->
-
-<!-- <div class="row photos">
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/portrait_01.jpg" />
-      <div class="card-body">Thanks for the shooting!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/portrait_02.jpg" />
-      <div class="card-body">Superb!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/portrait_03.jpg" />
-      <div class="card-body">Really gorgous!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/portrait_04.jpg" />
-      <div class="card-body">Just wow!</div>
-    </div>
-  </div> -->
-
-<!-- ### Portraits Line 2 ### -->
-
-<!-- <div class="row photos">
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/portrait_05.jpg" />
-      <div class="card-body">Top notch!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/portrait_06.jpg" />
-      <div class="card-body">Awesome work!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/portrait_07.jpg" />
-      <div class="card-body">Great!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/portrait_08.jpg" />
-      <div class="card-body">So cute!</div>
-    </div>
-  </div> -->
-
-<!-- ### Portraits Line 3 ### -->
-
-<!-- <div class="row photos">
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/portrait_09.jpg" />
-      <div class="card-body">Thank you!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/portrait_10.jpg" />
-      <div class="card-body">Phantastic!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/portrait_11.jpg" />
-      <div class="card-body">Perfect!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/portrait_12.jpg" />
-      <div class="card-body">So authentic!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/portrait_13.jpg" />
-      <div class="card-body">Thanks!</div>
-    </div>
-  </div> -->
-
-<!-- ### Travel Testimonials ### -->
-
-<!-- <div class="row mt-4 mb-2 ms-0 fs-1">Travel</div> -->
-
-<!-- ### Travel Line 1 ### -->
-
-<!-- <div class="row photos">
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/travel_01.jpg" />
-      <div class="card-body">Love this shot!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/travel_02.jpg" />
-      <div class="card-body">Good job!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/travel_03.jpg" />
-      <div class="card-body">Timing!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/travel_04.jpg" />
-      <div class="card-body">Great job there!</div>
-    </div>
-  </div> -->
-
-<!-- ### Travel Line 2 ### -->
-
-<!-- <div class="row photos">
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/travel_05.jpg" />
-      <div class="card-body">Beautiful!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/travel_06.jpg" />
-      <div class="card-body">This is just awesome!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/travel_07.jpg" />
-      <div class="card-body">Thanks again!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/travel_08.jpg" />
-      <div class="card-body">Nicely done!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/travel_09.jpg" />
-      <div class="card-body">Like it!</div>
-    </div>
-  </div> -->
-
-<!-- ### Travel Line 3 ### -->
-
-<!-- <div class="row photos">
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/travel_10.jpg" />
-      <div class="card-body">Beautiful scenery!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/travel_11.jpg" />
-      <div class="card-body">My favorite!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/travel_12.jpg" />
-      <div class="card-body">Atmospheric!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/travel_13.jpg" />
-      <div class="card-body">Those colors!</div>
-    </div>
-  </div>
-</div> -->
