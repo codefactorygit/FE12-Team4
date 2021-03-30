@@ -1,33 +1,37 @@
 export const customersAll = [
   {
   customerName: 'CakeFactory',
-  customerLogo: 'assets/images/natalia/logo/CakeFactory.png',
+  customerLogo: 'assets/images/natalia/logo/cakefactory-logo-black.png',
   campaignName: 'Autumn Campaign 2021',
   campaignText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptates similique dolore ea molestiae excepturi reprehenderit ipsa, omnis porro, qui nostrum voluptatem veritatis, sit laudantium debitis expedita at aut enim.',
   campaignImg: 'assets/images/natalia/CakeFactory-kazuend-geG4C3qyiG0-unsplash.jpg'
 },
 {
   customerName: 'beer maniac',
+  customerLogo: 'assets/images/natalia/logo/beermaniac-logo-black.png',
   campaignName: 'EC Campaign 2020',
-  campaignText: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+  campaignText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptates similique dolore ea molestiae excepturi reprehenderit ipsa, omnis porro, qui nostrum voluptatem veritatis, sit laudantium debitis expedita at aut enim.',
   campaignImg: 'assets/images/natalia/Beer-elevate-nYgy58eb9aw-unsplash.jpg'
 },
 {
   customerName: 'Crispy Chris',
+  customerLogo: 'assets/images/natalia/logo/chrispychris-logo-black.png',
   campaignName: 'Super Bowl LV',
-  campaignText: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  campaignText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptates similique dolore ea molestiae excepturi reprehenderit ipsa, omnis porro, qui nostrum voluptatem veritatis, sit laudantium debitis expedita at aut enim.',
   campaignImg: 'assets/images/natalia/crisps-simple-stripes-aMYCpvl8-WI-unsplash.jpg'
 },
 {
   customerName: 'SPA-verde',
+  customerLogo: 'assets/images/natalia/logo/spaverde-logo-black.png',
   campaignName: 'X-mas campaign 2019',
-  campaignText: 'Sapien faucibus et molestie ac feugiat sed lectus. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer.',
+  campaignText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptates similique dolore ea molestiae excepturi reprehenderit ipsa, omnis porro, qui nostrum voluptatem veritatis, sit laudantium debitis expedita at aut enim.',
   campaignImg: 'assets/images/natalia/spa-uby-yanes-BTCnsws8akI-unsplash.jpg'
 },
 {
   customerName: "Butcher's",
+  customerLogo: 'assets/images/natalia/logo/butchers-logo-black.png',
   campaignName: 'Product Launch 2018',
-  campaignText: 'Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Arcu odio ut sem nulla pharetra diam sit. Sapien pellentesque habitant morbi tristique senectus.',
+  campaignText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptates similique dolore ea molestiae excepturi reprehenderit ipsa, omnis porro, qui nostrum voluptatem veritatis, sit laudantium debitis expedita at aut enim.',
   campaignImg: 'assets/images/natalia/Butchers-sam-moqadam-SRzVKw8l_tA-unsplash.jpg'
 }
 ];
