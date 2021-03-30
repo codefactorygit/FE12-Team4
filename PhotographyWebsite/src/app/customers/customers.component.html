@@ -1,39 +1,46 @@
 <!-- b2b customers list -->
 
-<div class="container shadow-sm pt-4 pb-4">
+<div class="container pt-4 pb-4">
   <h1 class="text-center fw-light pt-1 pb-1">Our partners</h1>
 
-  <div class="col-12">
+  <div class="col-12 shadow-sm">
 
     <!-- Angular Material "TABS" -->
-    <mat-tab-group mat-align-tabs="center" animationDuration="2000ms" class="">
-      <mat-tab *ngFor="let customer of customers">
+    <mat-tab-group mat-align-tabs="center" animationDuration="2000ms" class="container">
+      <mat-tab *ngFor="let customer of customers"> <!-- ngFor loop -->
         <!-- tabpanel buttons -->
         <ng-template mat-tab-label>
           {{ customer.customerName }}
         </ng-template>
         
         <!-- details section with img & text about each b2b partner -->
-        <div class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter pt-2 pb-2 border-0">
-          <div class="overlayImg col-lg-6">
+        <div class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter border-0 bg-danger mt-3 mb-3">
+          
+          <!-- img section-->
+          <div class="overlayImg col-lg-6 bg-primary">
             <img src="{{ customer.campaignImg }}" class="card-img-top rounded-0 image col-lg-6" >
             <div class="overlay col-lg-6">
               <img src="{{ customer.customerLogo }}" class="icon" >
             </div>
           </div>
           
-          <div class="card-body rounded-0 col-lg-6">
+          <!-- details section-->
+          <div class="card-body rounded-0 col-lg-6 bg-warning mt-3 mt-lg-0">
             <h4 class="card-title">{{ customer.customerName }}</h4>
             <h5 class="card-title fw-light">{{ customer.campaignName }}</h5>
             <p class="card-text">{{ customer.campaignText }}</p>
-            <a href="#" class="btn btn-outline-secondary rounded-0">Go to project</a>
+            <a class="btn btn-outline-secondary rounded-0">Go to project</a>
           </div>
         </div>
-
       </mat-tab>
-    
     </mat-tab-group>
+  </div>
 
+  <!-- partner logo section -->
+  <div class="card-group pt-4 pb-4 d-flex flex-row align-items-center w-100 justify-content-center">
+    <div class="card col-2 col-md-2 m-1 p-lg-5 border-0" *ngFor="let customer of customers">
+      <img src="{{ customer.customerLogo }}" class="card-img-top">
+    </div>
   </div>
   
 </div>
