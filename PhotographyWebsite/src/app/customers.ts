@@ -1,6 +1,7 @@
 export const customersAll = [
   {
   customerName: 'CakeFactory',
+  customerLogo: 'assets/images/natalia/logo/CakeFactory.png',
   campaignName: 'Autumn Campaign 2021',
   campaignText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptates similique dolore ea molestiae excepturi reprehenderit ipsa, omnis porro, qui nostrum voluptatem veritatis, sit laudantium debitis expedita at aut enim.',
   campaignImg: 'assets/images/natalia/CakeFactory-kazuend-geG4C3qyiG0-unsplash.jpg'

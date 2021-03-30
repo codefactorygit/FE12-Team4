@@ -7,7 +7,45 @@
   cursor: pointer;
 }
 
-#changeImg:hover {
-  opacity: 0.3;
+.changeImg {
   z-index: 10;
 }
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+}
+
+.overlayImg:hover .overlay {
+  opacity: 1;
+  background-color: rgba(220, 220, 220, 0.8);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+
+
+
+
+
