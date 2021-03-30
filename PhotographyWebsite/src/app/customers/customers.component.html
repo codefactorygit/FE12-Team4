@@ -1,22 +1,20 @@
 <!-- b2b customers list -->
 
-<div class="container bg-secondary shadow-sm pt-4 pb-4">
+<div class="container shadow-sm pt-4 pb-4">
   <h1 class="text-center fw-light pt-1 pb-1">Our partners</h1>
 
-  <div class="bg-danger col-12">
+  <div class="col-12">
 
     <!-- Angular Material "TABS" -->
-    <mat-tab-group mat-align-tabs="center" animationDuration="2000ms" class="bg-warning">
-      <mat-tab *ngFor="let customer of customers" >
+    <mat-tab-group mat-align-tabs="center" animationDuration="2000ms" class="">
+      <mat-tab *ngFor="let customer of customers">
         <!-- tabpanel buttons -->
         <ng-template mat-tab-label>
-          <div class="bg-danger p-0">
-            {{ customer.customerName }}
-          </div>
+          {{ customer.customerName }}
         </ng-template>
         
         <!-- details section with img & text about each b2b partner -->
-        <div class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter pt-2 pb-2 border-0 ">
+        <div class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter pt-2 pb-2 border-0">
           <div class="overlayImg col-lg-6">
             <img src="{{ customer.campaignImg }}" class="card-img-top rounded-0 image col-lg-6" >
             <div class="overlay col-lg-6">
