@@ -26,12 +26,14 @@
   opacity: 0;
   transition: .1s ease-in-out;
   cursor: pointer;
+
 }
 
 .overlayImg:hover .overlay {
   opacity: 1;
   background-color: rgba(220, 220, 220, 0.8);
 }
+
 
 .icon {
   position: absolute;
@@ -44,9 +46,10 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 0px) and (max-width: 575.98px) {
   .overlay {
-  height: 48%;
+  display: none; /* hiding the element on small devices */
   }
 }
+
 @media (min-width: 576px) {
   .overlay {
   height: 50%;
@@ -66,17 +69,3 @@
   height: 100%;
   } 
 }
-
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  .overlay {
-    height: 100%;
-    }
- }
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { 
-  .overlay {
-    height: 100%;
-    }
- }

@@ -14,18 +14,18 @@
         </ng-template>
         
         <!-- details section with img & text about each b2b partner -->
-        <div class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter border-0 bg-danger mt-3 mb-3">
+        <div class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter border-0 mt-3 mb-3">
           
           <!-- img section-->
-          <div class="overlayImg col-lg-6 bg-primary">
-            <img src="{{ customer.campaignImg }}" class="card-img-top rounded-0 image col-lg-6" >
+          <div class="overlayImg col-lg-6">
+            <img src="{{ customer.campaignImg }}" class="col-lg-6 card-img rounded-0 image">
             <div class="overlay col-lg-6">
               <img src="{{ customer.customerLogo }}" class="icon" >
             </div>
           </div>
           
           <!-- details section-->
-          <div class="card-body rounded-0 col-lg-6 bg-warning mt-3 mt-lg-0">
+          <div class="card-body rounded-0 col-lg-6 mt-3 mt-lg-0">
             <h4 class="card-title">{{ customer.customerName }}</h4>
             <h5 class="card-title fw-light">{{ customer.campaignName }}</h5>
             <p class="card-text">{{ customer.campaignText }}</p>
@@ -42,6 +42,6 @@
       <img src="{{ customer.customerLogo }}" class="card-img-top">
     </div>
   </div>
-  
+
 </div>
 
