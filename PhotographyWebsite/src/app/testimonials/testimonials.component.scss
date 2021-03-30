@@ -5,7 +5,7 @@
 
 .card {
   border: none;
-
+  padding: calc(0.25vw + 0.25vh + 0.125vmin);
   img {
     box-shadow: 1px 2px 3px darkgrey;
     width: 100%;
@@ -16,7 +16,7 @@
 }
 
 .card-body {
-  background-color: rgb(63, 63, 63);
+  background-color: rgb(58, 58, 58);
   color: white;
   padding-bottom: 0.15rem;
   padding-top: 0.1rem;
@@ -29,4 +29,15 @@
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   box-shadow: 1px 2px 3px darkgrey;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hoverZoom {
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+.hoverZoom:hover {
+  transform: scale(1.03);
 }

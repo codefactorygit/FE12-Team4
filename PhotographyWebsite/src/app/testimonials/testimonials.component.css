@@ -5,6 +5,7 @@
 
 .card {
   border: none;
+  padding: calc(0.25vw + 0.25vh + 0.125vmin);
 }
 
 .card img {
@@ -17,7 +18,7 @@
 }
 
 .card-body {
-  background-color: #3f3f3f;
+  background-color: #3a3a3a;
   color: white;
   padding-bottom: 0.15rem;
   padding-top: 0.1rem;
@@ -31,5 +32,19 @@
   border-bottom-right-radius: 0.25rem;
   -webkit-box-shadow: 1px 2px 3px darkgrey;
           box-shadow: 1px 2px 3px darkgrey;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hoverZoom {
+  transition: -webkit-transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.hoverZoom:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 /*# sourceMappingURL=testimonials.component.css.map */
