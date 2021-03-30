@@ -1,82 +1,44 @@
-<div class="container-fluid mx-1 mt-3">
-  <!-- ### Wedding Testimonials ### -->
+<div class="wrapper mx-1">
+  <div class="container-fluid">
+    <!-- ### Wedding Testimonials ### -->
 
-  <div class="row mt-4 mb-2 ms-0 fs-1">Weddings</div>
+    <div class="row mt-4 mb-2 ms-0 fs-1">Weddings</div>
 
-  <!-- ### Weddings Line 1 ### -->
+    <!-- ### Building up the Wedding cards ### -->
 
-  <div class="row photos">
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/wedding_01.jpg" />
-      <div class="card-body">It was perfect!</div>
+    <div class="row photos">
+      <div
+        *ngFor="let wedding of weddings; index as weddingId"
+        class="card imgBox col-{{ wedding.columns }} p-1"
+      >
+        <img src="{{ wedding.image }}" />
+        <div class="card-body">{{ wedding.review }}</div>
+      </div>
     </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/wedding_02.jpg" />
-      <div class="card-body">Thanks!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/wedding_03.jpg" />
-      <div class="card-body">Our dreams came true!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/wedding_04.jpg" />
-      <div class="card-body">Thank you!</div>
-    </div>
+
+    <!-- ### Portrait Testimonials ### -->
+
+    <div class="row mt-4 mb-2 ms-0 fs-1">Portraits</div>
+
+    <!-- ### Building up the Wedding cards ### -->
+
+    <!-- <div class="row photos">
+      <div
+        *ngFor="let wedding of weddings; index as weddingId"
+        class="card imgBox col-{{ wedding.columns }} p-1"
+      >
+        <img src="{{ wedding.image }}" />
+        <div class="card-body">{{ wedding.review }}</div>
+      </div>
+    </div> -->
+
+    <!--#############################-->
   </div>
+</div>
 
-  <!-- ### Weddings Line 2 ### -->
+<!-- ### Portraits Line 1 ### -->
 
-  <div class="row photos">
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/wedding_05.jpg" />
-      <div class="card-body">Memorable!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/wedding_06.jpg" />
-      <div class="card-body">Wonderful pictures!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/wedding_07.jpg" />
-      <div class="card-body">Great job!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/wedding_08.jpg" />
-      <div class="card-body">Thank you so much!</div>
-    </div>
-  </div>
-
-  <!-- ### Weddings Line 3 ### -->
-
-  <div class="row photos">
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/wedding_09.jpg" />
-      <div class="card-body">Thank you ..</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/wedding_10.jpg" />
-      <div class="card-body">.. so much!</div>
-    </div>
-    <div class="card imgBox col-4 p-1">
-      <img src="assets/images/testimonials/wedding_11.jpg" />
-      <div class="card-body">We will allways remember this!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/wedding_12.jpg" />
-      <div class="card-body">Beautiful!</div>
-    </div>
-    <div class="card imgBox col-2 p-1">
-      <img src="assets/images/testimonials/wedding_13.jpg" />
-      <div class="card-body">Many thanks!</div>
-    </div>
-  </div>
-
-  <!-- ### Portrait Testimonials ### -->
-
-  <div class="row mt-4 mb-2 ms-0 fs-1">Portraits</div>
-
-  <!-- ### Portraits Line 1 ### -->
-
-  <div class="row photos">
+<!-- <div class="row photos">
     <div class="card imgBox col-4 p-1">
       <img src="assets/images/testimonials/portrait_01.jpg" />
       <div class="card-body">Thanks for the shooting!</div>
@@ -93,11 +55,11 @@
       <img src="assets/images/testimonials/portrait_04.jpg" />
       <div class="card-body">Just wow!</div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- ### Portraits Line 2 ### -->
+<!-- ### Portraits Line 2 ### -->
 
-  <div class="row photos">
+<!-- <div class="row photos">
     <div class="card imgBox col-2 p-1">
       <img src="assets/images/testimonials/portrait_05.jpg" />
       <div class="card-body">Top notch!</div>
@@ -114,11 +76,11 @@
       <img src="assets/images/testimonials/portrait_08.jpg" />
       <div class="card-body">So cute!</div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- ### Portraits Line 3 ### -->
+<!-- ### Portraits Line 3 ### -->
 
-  <div class="row photos">
+<!-- <div class="row photos">
     <div class="card imgBox col-2 p-1">
       <img src="assets/images/testimonials/portrait_09.jpg" />
       <div class="card-body">Thank you!</div>
@@ -139,15 +101,15 @@
       <img src="assets/images/testimonials/portrait_13.jpg" />
       <div class="card-body">Thanks!</div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- ### Travel Testimonials ### -->
+<!-- ### Travel Testimonials ### -->
 
-  <div class="row mt-4 mb-2 ms-0 fs-1">Travel</div>
+<!-- <div class="row mt-4 mb-2 ms-0 fs-1">Travel</div> -->
 
-  <!-- ### Travel Line 1 ### -->
+<!-- ### Travel Line 1 ### -->
 
-  <div class="row photos">
+<!-- <div class="row photos">
     <div class="card imgBox col-4 p-1">
       <img src="assets/images/testimonials/travel_01.jpg" />
       <div class="card-body">Love this shot!</div>
@@ -164,11 +126,11 @@
       <img src="assets/images/testimonials/travel_04.jpg" />
       <div class="card-body">Great job there!</div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- ### Travel Line 2 ### -->
+<!-- ### Travel Line 2 ### -->
 
-  <div class="row photos">
+<!-- <div class="row photos">
     <div class="card imgBox col-2 p-1">
       <img src="assets/images/testimonials/travel_05.jpg" />
       <div class="card-body">Beautiful!</div>
@@ -189,11 +151,11 @@
       <img src="assets/images/testimonials/travel_09.jpg" />
       <div class="card-body">Like it!</div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- ### Travel Line 3 ### -->
+<!-- ### Travel Line 3 ### -->
 
-  <div class="row photos">
+<!-- <div class="row photos">
     <div class="card imgBox col-4 p-1">
       <img src="assets/images/testimonials/travel_10.jpg" />
       <div class="card-body">Beautiful scenery!</div>
@@ -211,4 +173,4 @@
       <div class="card-body">Those colors!</div>
     </div>
   </div>
-</div>
+</div> -->
