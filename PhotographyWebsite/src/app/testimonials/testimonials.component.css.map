@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAEE,OAFK,CAEL,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;AAGH,AAAA,OAAO,CAAC;EACN,WAAW,EAAE,eAAe;EAC5B,aAAa,EAAE,eAAe;EAC9B,YAAY,EAAE,eAAe;EAC7B,gBAAgB,EAAE,OAAe;EACjC,SAAS,EAAE,MAAM;EACjB,YAAY,EAAE,MAAM;EACpB,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "testimonials.component.scss"
+    ],
+    "names": [],
+    "file": "testimonials.component.css"
+}

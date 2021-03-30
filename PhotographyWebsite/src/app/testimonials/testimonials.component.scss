@@ -1,0 +1,22 @@
+// .container {
+//   border: 1px solid red;
+// }
+
+.imgBox {
+  // border: 1px solid black;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.rating {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background-color: rgb(63, 63, 63);
+  font-size: 0.8rem;
+  padding-left: 0.2rem;
+  padding-bottom: 0.1rem;
+  font-style: italic;
+}
