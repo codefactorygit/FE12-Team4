@@ -38,9 +38,9 @@ a {
 
 .about-text {
     background: #f5f5f5;
-    padding-left: 50px;
-    padding-top: 50px;
-    height: 380px;
+    /* padding-left: 10px;
+    padding-top: 10px; */
+    height: 200px;
 }
 
 .cardZoom {
