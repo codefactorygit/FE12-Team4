@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { testimonials } from '../testimonials';
+import { weddings } from '../testimonials_weddings';
+import { portraits } from '../testimonials_portraits';
+import { travels } from '../testimonials_travels';
 
 @Component({
   selector: 'testimonials',
@@ -7,7 +9,9 @@ import { testimonials } from '../testimonials';
   styleUrls: ['./testimonials.component.css'],
 })
 export class TestimonialsComponent implements OnInit {
-  testimonials = testimonials;
+  weddings = weddings;
+  portraits = portraits;
+  travels = travels;
 
   constructor() {}
 
