@@ -4,7 +4,8 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 html, body { height: 100%; }
-body {
+
+body, .fontAM { /* fontAM -- a class for elements designed with Angular Material */
   margin: 0; 
   font-family: 'Playfair Display', sans-serif;
 }
