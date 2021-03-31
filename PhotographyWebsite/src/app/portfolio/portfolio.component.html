@@ -2,27 +2,24 @@
     <div class="container-fluid">
         <!-- ### Wedding Portfolio ### -->
 
-        <div class="row mt-4 mb-2 ms-0 fs-1">Best Weddings Photos</div>
+        <div class="row mt-4 mb-2 ms-0 fs-1">Portfolio Photos</div>
 
         <!-- ### Building up the portfolio Wedding cards ### -->
 
         <div class="row">
-            <div *ngFor="let wedding of portWedd; index as weddingId" class="card col-{{ wedding.columns }}">
-                <img src="{{ wedding.image }}" />
+            <div *ngFor="let portIMG of portfolio" class="card col-{{ portIMG.columns }}">
+                <img src="{{ portIMG.image }}" />
 
             </div>
         </div>
+
         <!-- ### Portrait Testimonials ### -->
 
-        <div class="row mt-4 mb-2 ms-0 fs-1">Portraits</div>
+
 
         <!-- ### Building up the Portrait cards ### -->
 
-        <div class="row">
-            <div *ngFor="let natur of portNat; index as naturId" class="card  col-{{ portrait.columns }}">
-                <img src="{{ natur.image }}" />
-            </div>
-        </div>
+
     </div>
 
 </div>

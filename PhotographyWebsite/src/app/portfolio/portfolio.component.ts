@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {portfolioWeddings} from '../portfolio_weddings';
-import {portfolioNatur} from '../portfolio_natur';
+import {portfolio} from '../portfolio';
+
 
 @Component({
   selector: 'portfolio',
@@ -8,8 +8,8 @@ import {portfolioNatur} from '../portfolio_natur';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  portWedd = portfolioWeddings;
-  portNat = portfolioNatur;
+  portfolio = portfolio;
+  
 
   constructor() { }
 
