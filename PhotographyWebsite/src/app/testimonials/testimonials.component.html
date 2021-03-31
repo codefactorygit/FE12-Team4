@@ -8,7 +8,7 @@
 
     <div class="row">
       <div
-        *ngFor="let wedding of weddings; index as weddingId"
+        *ngFor="let wedding of weddings"
         class="card hoverZoom col-{{ wedding.columns }}"
       >
         <img src="{{ wedding.image }}" />
@@ -24,7 +24,7 @@
 
     <div class="row">
       <div
-        *ngFor="let portrait of portraits; index as portraitId"
+        *ngFor="let portrait of portraits"
         class="card hoverZoom col-{{ portrait.columns }}"
       >
         <img src="{{ portrait.image }}" />
@@ -40,7 +40,7 @@
 
     <div class="row">
       <div
-        *ngFor="let travel of travels; index as travelId"
+        *ngFor="let travel of travels"
         class="card hoverZoom col-{{ travel.columns }}"
       >
         <img src="{{ travel.image }}" />
