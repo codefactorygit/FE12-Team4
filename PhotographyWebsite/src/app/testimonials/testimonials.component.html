@@ -1,337 +1,51 @@
-<div class="container-fluid mx-1 mt-3">
-  <!-- ### Wedding Testimonials ### -->
+<div class="wrapper mx-1">
+  <div class="container-fluid">
+    <!-- ### Wedding Testimonials ### -->
 
-  <div class="row mt-4 mb-2 ms-0 fs-1">Weddings</div>
+    <div class="row mt-4 mb-2 ms-0 fs-1">Weddings</div>
 
-  <!-- ### Weddings Line 1 Photos ### -->
+    <!-- ### Building up the Wedding cards ### -->
 
-  <div class="row photos">
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_01.jpg" />
+    <div class="row">
+      <div
+        *ngFor="let wedding of weddings; index as weddingId"
+        class="card hoverZoom col-{{ wedding.columns }}"
+      >
+        <img src="{{ wedding.image }}" />
+        <div class="card-body">{{ wedding.review }}</div>
+      </div>
     </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_02.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_03.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_04.jpg" />
-    </div>
-  </div>
 
-  <!-- ### Weddings Line 1 Ratings ### -->
+    <!-- ### Portrait Testimonials ### -->
 
-  <div class="row text pt-0">
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">It was perfect!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Thanks!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Our dreams came true!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Thank you!</div>
-    </div>
-  </div>
+    <div class="row mt-4 mb-2 ms-0 fs-1">Portraits</div>
 
-  <!-- ### Weddings Line 2 Photos ### -->
+    <!-- ### Building up the Portrait cards ### -->
 
-  <div class="row photos">
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_05.jpg" />
+    <div class="row">
+      <div
+        *ngFor="let portrait of portraits; index as portraitId"
+        class="card hoverZoom col-{{ portrait.columns }}"
+      >
+        <img src="{{ portrait.image }}" />
+        <div class="card-body">{{ portrait.review }}</div>
+      </div>
     </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_06.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_07.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_08.jpg" />
-    </div>
-  </div>
 
-  <!-- ### Weddings Line 2 Ratings ### -->
+    <!-- ### Travel Testimonials ### -->
 
-  <div class="row text pt-0">
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Memorable!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Wonderful pictures!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Great job!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Thank you so much!</div>
-    </div>
-  </div>
+    <div class="row mt-4 mb-2 ms-0 fs-1">Travels</div>
 
-  <!-- ### Weddings Line 3 Photos ### -->
+    <!-- ### Building up the Travel cards ### -->
 
-  <div class="row photos">
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_09.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_10.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_11.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_12.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/wedding_13.jpg" />
-    </div>
-  </div>
-
-  <!-- ### Weddings Line 3 Ratings ### -->
-
-  <div class="row text pt-0">
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Thank you ..</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">.. so much!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">We will allways remember this!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Beautiful!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Many thanks!</div>
-    </div>
-  </div>
-
-  <!-- ### Portrait Testimonials ### -->
-
-  <div class="row mt-4 mb-2 ms-0 fs-1">Portraits</div>
-
-  <!-- ### Portraits Line 1 Photos ### -->
-
-  <div class="row photos">
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_01.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_02.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_03.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_04.jpg" />
-    </div>
-  </div>
-
-  <!-- ### Portraits Line 1 Ratings ### -->
-
-  <div class="row text pt-0">
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Thanks for the shooting!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Superb!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Really gorgous!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Just wow!</div>
-    </div>
-  </div>
-
-  <!-- ### Portraits Line 2 Photos ### -->
-
-  <div class="row photos">
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_05.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_06.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_07.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_08.jpg" />
-    </div>
-  </div>
-
-  <!-- ### Portraits Line 2 Ratings ### -->
-
-  <div class="row text pt-0">
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Top notch!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Awesome work!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Great!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">So cute!</div>
-    </div>
-  </div>
-
-  <!-- ### Portraits Line 3 Photos ### -->
-
-  <div class="row photos">
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_09.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_10.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_11.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_12.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/portrait_13.jpg" />
-    </div>
-  </div>
-
-  <!-- ### Portraits Line 3 Ratings ### -->
-
-  <div class="row text pt-0">
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Thank you!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Phantastic!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Perfect!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">So authentic!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Thanks!</div>
-    </div>
-  </div>
-
-  <!-- ### Travel Testimonials Preview ### -->
-
-  <div class="row mt-4 mb-2 ms-0 fs-1">Travel</div>
-
-  <!-- ### Travel Line 1 Photos ### -->
-
-  <div class="row photos">
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_01.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_02.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_03.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_04.jpg" />
-    </div>
-  </div>
-
-  <!-- ### Travel Line 1 Ratings ### -->
-
-  <div class="row text pt-0">
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Love this shot!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Good job!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Timing!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Great job there!</div>
-    </div>
-  </div>
-
-  <!-- ### Travel Line 2 Photos ### -->
-
-  <div class="row photos">
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_05.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_06.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_07.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_08.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_09.jpg" />
-    </div>
-  </div>
-
-  <!-- ### Travel Line 2 Ratings ### -->
-
-  <div class="row text pt-0">
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Beautiful!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">This is just awesome!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Thanks again!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Nicely done!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Like it!</div>
-    </div>
-  </div>
-
-  <!-- ### Travel Line 3 Photos ### -->
-
-  <div class="row photos">
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_10.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_11.jpg" />
-    </div>
-    <div class="imgBox col-2 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_12.jpg" />
-    </div>
-    <div class="imgBox col-4 p-1 pb-0">
-      <img src="assets/images/testimonials/travel_13.jpg" />
-    </div>
-  </div>
-
-  <!-- ### Travel Line 3 Ratings ### -->
-
-  <div class="row text pt-0">
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Beautiful scenery!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">My favorite!</div>
-    </div>
-    <div class="textBox col-2 p-1 pt-0 text-light">
-      <div class="rating">Atmospheric!</div>
-    </div>
-    <div class="textBox col-4 p-1 pt-0 text-light">
-      <div class="rating">Those colors!</div>
+    <div class="row">
+      <div
+        *ngFor="let travel of travels; index as travelId"
+        class="card hoverZoom col-{{ travel.columns }}"
+      >
+        <img src="{{ travel.image }}" />
+        <div class="card-body">{{ travel.review }}</div>
+      </div>
     </div>
   </div>
 </div>

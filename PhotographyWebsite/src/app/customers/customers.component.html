@@ -1,37 +1,47 @@
 <!-- b2b customers list -->
 
-<div class="bg-light shadow-sm pt-4 pb-4">
+<div class="container pt-4 pb-4">
   <h1 class="text-center fw-light pt-1 pb-1">Our partners</h1>
-  <div class="container ">
-    <nav class="d-flex justify-content-center">
 
-      <!-- accessible tabpanel of each b2b partner -- clickable list of companies -->
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">CakeFactory</button>
-        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">beery maniac</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Crispy Chris</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">SPA-lverde</button>
-        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Butcher's</button>
-      </div>
-    </nav>
+  <div class="col-12 shadow-sm">
 
-    <!-- details section with img & text about each b2b partner -->
-    <div class="tab-content col-10 row w-100" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="card d-flex flex-column flex-md-row bg-warning rounded-0">
-          <div class="col-12 col-md-6">
-            <img src="assets/images/natalia/CakeFactory-kazuend-geG4C3qyiG0-unsplash.jpg" class="card-img-top rounded-0 bg-danger" alt="...">
+    <!-- Angular Material "TABS" -->
+    <mat-tab-group mat-align-tabs="center" animationDuration="2000ms" class="container">
+      <mat-tab *ngFor="let customer of customers"> <!-- ngFor loop -->
+        <!-- tabpanel buttons -->
+        <ng-template mat-tab-label>
+          {{ customer.customerName }}
+        </ng-template>
+        
+        <!-- details section with img & text about each b2b partner -->
+        <div class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter border-0 mt-3 mb-3">
+          
+          <!-- img section-->
+          <div class="overlayImg col-lg-6">
+            <img src="{{ customer.campaignImg }}" class="col-lg-6 card-img rounded-0 image">
+            <div class="overlay col-lg-6">
+              <img src="{{ customer.customerLogo }}" class="icon" >
+            </div>
           </div>
-          <div class="card-body bg-success rounded-0 col-12 col-md-6">
-            <h4 class="card-title">CakeFactory</h4>
-            <h5 class="card-title fw-light">Summer Campaign 2021</h5>
-            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptates similique dolore ea molestiae excepturi reprehenderit ipsa, omnis porro, qui nostrum voluptatem veritatis, sit laudantium debitis expedita at aut enim.</p>
-            <a href="#" class="btn btn-primary">Go to project</a>
+          
+          <!-- details section-->
+          <div class="card-body rounded-0 col-lg-6 mt-3 mt-lg-0">
+            <h4 class="card-title">{{ customer.customerName }}</h4>
+            <h5 class="card-title fw-light">{{ customer.campaignName }}</h5>
+            <p class="card-text">{{ customer.campaignText }}</p>
+            <a class="btn btn-outline-secondary rounded-0">Go to project</a>
           </div>
         </div>
-      </div>
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+
+  <!-- partner logo section -->
+  <div class="card-group pt-4 pb-4 d-flex flex-row align-items-center w-100 justify-content-center">
+    <div class="card col-2 col-md-2 m-1 p-lg-5 border-0" *ngFor="let customer of customers">
+      <img src="{{ customer.customerLogo }}" class="card-img-top">
     </div>
   </div>
+
 </div>
+
