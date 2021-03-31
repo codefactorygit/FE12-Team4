@@ -1,3 +1,7 @@
+.wrapper {
+  overflow: hidden;
+}
+
 .container {
   margin: auto;
   padding: 0;
