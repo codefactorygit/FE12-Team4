@@ -43,6 +43,7 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 0px) and (max-width: 575.98px) {
   .overlay {
