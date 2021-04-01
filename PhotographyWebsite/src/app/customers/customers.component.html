@@ -1,29 +1,37 @@
 <!-- b2b customers list -->
 
 <div class="container pt-4 pb-4">
-  <h1 class="text-center">Our partners</h1>
+  <h1 class="text-center">My partners</h1>
 
   <div class="col-12 shadow">
-
     <!-- Angular Material "TABS" -->
-    <mat-tab-group mat-align-tabs="center" animationDuration="2000ms" class="container fontAM">
-      <mat-tab *ngFor="let customer of customers"> <!-- ngFor loop -->
+    <mat-tab-group
+      mat-align-tabs="center"
+      animationDuration="2000ms"
+      class="container fontAM"
+    >
+      <mat-tab *ngFor="let customer of customers">
+        <!-- ngFor loop -->
         <!-- tabpanel buttons -->
         <ng-template mat-tab-label>
           {{ customer.customerName }}
         </ng-template>
-        
+
         <!-- details section with img & text about each b2b partner -->
-        <div class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter border-0 mt-3 mb-3">
-          
+        <div
+          class="card d-flex flex-column flex-md-row rounded-0 row col-10 alignCenter border-0 mt-3 mb-3"
+        >
           <!-- img section-->
           <div class="overlayImg col-lg-6">
-            <img src="{{ customer.campaignImg }}" class="col-lg-6 card-img rounded-3 image">
+            <img
+              src="{{ customer.campaignImg }}"
+              class="col-lg-6 card-img rounded-3 image"
+            />
             <div class="overlay col-lg-6">
-              <img src="{{ customer.customerLogo }}" class="icon" >
+              <img src="{{ customer.customerLogo }}" class="icon" />
             </div>
           </div>
-          
+
           <!-- details section-->
           <div class="card-body rounded-0 col-lg-6 mt-3 mt-lg-0">
             <h4 class="card-title">{{ customer.customerName }}</h4>
@@ -37,11 +45,14 @@
   </div>
 
   <!-- partner logo section -->
-  <div class="card-group pt-4 pb-4 d-flex flex-row align-items-center w-100 justify-content-center">
-    <div class="card col-2 col-md-2 m-1 p-lg-5 border-0" *ngFor="let customer of customers">
-      <img src="{{ customer.customerLogo }}" class="card-img-top">
+  <div
+    class="card-group pt-4 pb-4 d-flex flex-row align-items-center w-100 justify-content-center"
+  >
+    <div
+      class="card col-2 col-md-2 m-1 p-lg-5 border-0"
+      *ngFor="let customer of customers"
+    >
+      <img src="{{ customer.customerLogo }}" class="card-img-top" />
     </div>
   </div>
-
 </div>
-

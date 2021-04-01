@@ -1,11 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* importing a pre-built CSS theme for all the styles for the core */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 
-body, .fontAM { /* fontAM -- a class for elements designed with Angular Material */
-  margin: 0; 
-  font-family: 'Playfair Display', sans-serif;
+body,
+.fontAM {
+  /* fontAM -- a class for elements designed with Angular Material */
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
